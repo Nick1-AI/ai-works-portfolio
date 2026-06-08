@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Works Portfolio</title>
+  <meta name="description" content="Claude APIを活用したAI開発作品のポートフォリオ">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ── NAV ── -->
+  <header>
+    <nav class="nav" aria-label="Main navigation">
+      <div class="nav__inner">
+        <a href="#" class="nav__logo">AI<span>.</span>WORKS</a>
+        <ul class="nav__links">
+          <li><a href="#works">Works</a></li>
+          <li><a href="#stack">Stack</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ── HERO ── -->
+  <section class="hero" id="top">
+    <div class="hero__bg">
+      <div class="hero__bg-gradient"></div>
+    </div>
+    <div class="container hero__content">
+      <div class="hero__tag reveal">AI Developer Portfolio</div>
+      <h1 class="reveal reveal-delay-1">
+        Build Fast.<br><em>Ship Smart.</em>
+      </h1>
+      <p class="hero__sub reveal reveal-delay-2">
+        Claude API を軸に、ゲーム・チャットbot・画像生成ツールを開発。<br>
+        アイデアを素早くプロダクトへ変換します。
+      </p>
+      <div class="hero__actions reveal reveal-delay-3">
+        <a href="#works" class="btn btn--primary">View Works →</a>
+        <a href="#contact" class="btn btn--outline">Contact</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── STATS BAND ── -->
+  <div class="stats-band">
+    <div class="container">
+      <div class="stats-band__grid">
+        <div class="reveal">
+          <div class="stat__number" data-target="8" data-suffix="+">0+</div>
+          <div class="stat__label">AI Projects</div>
+        </div>
+        <div class="reveal reveal-delay-1">
+          <div class="stat__number" data-target="3" data-suffix=" APIs">0 APIs</div>
+          <div class="stat__label">Integrated</div>
+        </div>
+        <div class="reveal reveal-delay-2">
+          <div class="stat__number" data-target="100" data-suffix="%">0%</div>
+          <div class="stat__label">AI-Assisted Build</div>
+        </div>
+        <div class="reveal reveal-delay-3">
+          <div class="stat__number" data-target="1" data-suffix=" Day" data-prefix="< ">0 Day</div>
+          <div class="stat__label">Avg. Delivery</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── WORKS ── -->
+  <section class="works" id="works">
+    <div class="container">
+      <span class="section-label">// Works</span>
+      <h2 class="reveal">AI Development<br>Works</h2>
+
+      <div class="works-grid">
+
+        <!-- Card 1: Cyber Tetris -->
+        <article class="card reveal">
+          <div class="card__img-wrap">
+            <img src="images/cyber_tetris.png" alt="Cyber Tetris — ネオン都市テーマのテトリスゲーム"
+                 onerror="this.parentElement.innerHTML='<div class=\'card__placeholder\'>Cyber Tetris</div>'">
+          </div>
+          <div class="card__body">
+            <span class="card__tag">Game / AI</span>
+            <h3>Cyber Tetris</h3>
+            <p>Claude API でゲームロジックと UI を生成したネオン都市テーマのテトリス。Manus でデプロイ済み。</p>
+            <a class="card__link" href="https://tetrisgame-b92b5ubz.manus.space" target="_blank" rel="noopener">
+              Live Demo →
+            </a>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="card reveal reveal-delay-1">
+          <div class="card__img-wrap">
+            <div class="card__placeholder">Chat Bot</div>
+          </div>
+          <div class="card__body">
+            <span class="card__tag">Chatbot / NLP</span>
+            <h3>AI Chat Assistant</h3>
+            <p>Claude API を使ったカスタム AI チャットボット。コンテキスト管理・RAG・ストリーミング対応。</p>
+            <a class="card__link" href="#" aria-disabled="true">Coming Soon →</a>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="card reveal reveal-delay-2">
+          <div class="card__img-wrap">
+            <div class="card__placeholder">Image Gen</div>
+          </div>
+          <div class="card__body">
+            <span class="card__tag">Image / AI</span>
+            <h3>AI Image Generator</h3>
+            <p>テキストプロンプトからリアルタイムで画像を生成するウェブアプリ。スタイル転換機能付き。</p>
+            <a class="card__link" href="#" aria-disabled="true">Coming Soon →</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CTA BAND ── -->
+  <div class="cta-band">
+    <div class="cta-band__bg"></div>
+    <div class="container cta-band__content">
+      <h2 class="reveal">Build Something<br><em>Remarkable.</em></h2>
+      <p class="reveal reveal-delay-1">AI の力で、アイデアを素早くプロダクトへ。一緒に作りましょう。</p>
+      <a href="#contact" class="btn btn--primary reveal reveal-delay-2">Get in Touch →</a>
+    </div>
+  </div>
+
+  <!-- ── TECH STACK ── -->
+  <section class="stack" id="stack">
+    <div class="container">
+      <span class="section-label">// Stack</span>
+      <h2 class="reveal">Technologies</h2>
+      <div class="stack-grid">
+        <div class="stack-item reveal">Claude API</div>
+        <div class="stack-item reveal reveal-delay-1">Python</div>
+        <div class="stack-item reveal reveal-delay-2">JavaScript</div>
+        <div class="stack-item reveal reveal-delay-3">HTML / CSS</div>
+        <div class="stack-item reveal">React</div>
+        <div class="stack-item reveal reveal-delay-1">Node.js</div>
+        <div class="stack-item reveal reveal-delay-2">Manus</div>
+        <div class="stack-item reveal reveal-delay-3">Vercel</div>
+        <div class="stack-item reveal">REST API</div>
+        <div class="stack-item reveal reveal-delay-1">RAG</div>
+        <div class="stack-item reveal reveal-delay-2">GitHub</div>
+        <div class="stack-item reveal reveal-delay-3">Git</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTACT ── -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <span class="section-label">// Contact</span>
+      <h2 class="reveal">Get in Touch</h2>
+      <p class="reveal reveal-delay-1">AI 開発・コラボレーションのご相談はお気軽にどうぞ。</p>
+      <div class="contact-links reveal reveal-delay-2">
+        <a href="https://github.com/Nick1-AI" target="_blank" rel="noopener">GitHub</a>
+        <a href="#">Twitter / X</a>
+        <a href="mailto:test00000qwerty@gmail.com">Email</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 AI Works Portfolio — Built with Claude &amp; shipped fast.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
