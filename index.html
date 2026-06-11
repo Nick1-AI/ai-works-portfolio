@@ -7,7 +7,7 @@
   <meta name="description" content="Claude APIを活用したAI開発作品のポートフォリオ">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -16,21 +16,21 @@
   <header>
     <nav class="nav" aria-label="Main navigation">
       <div class="nav__inner">
-        <a href="#" class="nav__logo">AI<span>.</span>WORKS</a>
+        <a href="#top" class="nav__logo">AI<span class="nav__dot">.</span>WORKS</a>
         <ul class="nav__links">
           <li><a href="#works">Works</a></li>
           <li><a href="#stack">Stack</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
+        <button class="nav__hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
       </div>
     </nav>
   </header>
 
-  <!-- ── HERO ── -->
+  <!-- ── HERO  (dark: #0D1117) ── -->
   <section class="hero" id="top">
-    <div class="hero__bg">
-      <div class="hero__bg-gradient"></div>
-    </div>
     <div class="container hero__content">
       <div class="hero__tag reveal">AI Developer Portfolio</div>
       <h1 class="reveal reveal-delay-1">
@@ -45,9 +45,12 @@
         <a href="#contact" class="btn btn--outline">Contact</a>
       </div>
     </div>
+    <div class="hero__scroll-hint" aria-hidden="true">
+      <span></span>
+    </div>
   </section>
 
-  <!-- ── STATS BAND ── -->
+  <!-- ── STATS BAND  (blue: #1A3A6B) ── -->
   <div class="stats-band">
     <div class="container">
       <div class="stats-band__grid">
@@ -64,14 +67,14 @@
           <div class="stat__label">AI-Assisted Build</div>
         </div>
         <div class="reveal reveal-delay-3">
-          <div class="stat__number" data-target="1" data-suffix=" Day" data-prefix="< ">0 Day</div>
+          <div class="stat__number" data-target="1" data-suffix=" Day" data-prefix="&lt; ">0 Day</div>
           <div class="stat__label">Avg. Delivery</div>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- ── WORKS ── -->
+  <!-- ── WORKS  (light: #F4F4F5) ── -->
   <section class="works" id="works">
     <div class="container">
       <span class="section-label">// Works</span>
@@ -82,16 +85,20 @@
         <!-- Card 1: Cyber Tetris -->
         <article class="card reveal">
           <div class="card__img-wrap">
-            <img src="images/cyber_tetris.png" alt="Cyber Tetris — ネオン都市テーマのテトリスゲーム"
+            <img src="images/cyber_tetris.png"
+                 alt="Cyber Tetris — ネオン都市テーマのテトリスゲーム"
                  onerror="this.parentElement.innerHTML='<div class=\'card__placeholder\'>Cyber Tetris</div>'">
           </div>
           <div class="card__body">
-            <span class="card__tag">Game / AI</span>
+            <div class="card__tags">
+              <span class="card__tag">Game</span>
+              <span class="card__tag">AI</span>
+            </div>
             <h3>Cyber Tetris</h3>
             <p>Claude API でゲームロジックと UI を生成したネオン都市テーマのテトリス。Manus でデプロイ済み。</p>
-            <a class="card__link" href="https://tetrisgame-b92b5ubz.manus.space" target="_blank" rel="noopener">
-              Live Demo →
-            </a>
+            <div class="card__links">
+              <a class="card__link" href="https://tetrisgame-b92b5ubz.manus.space" target="_blank" rel="noopener">Live Demo →</a>
+            </div>
           </div>
         </article>
 
@@ -101,10 +108,15 @@
             <div class="card__placeholder">Chat Bot</div>
           </div>
           <div class="card__body">
-            <span class="card__tag">Chatbot / NLP</span>
+            <div class="card__tags">
+              <span class="card__tag">Chatbot</span>
+              <span class="card__tag">NLP</span>
+            </div>
             <h3>AI Chat Assistant</h3>
             <p>Claude API を使ったカスタム AI チャットボット。コンテキスト管理・RAG・ストリーミング対応。</p>
-            <a class="card__link" href="#" aria-disabled="true">Coming Soon →</a>
+            <div class="card__links">
+              <a class="card__link card__link--disabled" href="#" aria-disabled="true">Coming Soon →</a>
+            </div>
           </div>
         </article>
 
@@ -114,10 +126,15 @@
             <div class="card__placeholder">Image Gen</div>
           </div>
           <div class="card__body">
-            <span class="card__tag">Image / AI</span>
+            <div class="card__tags">
+              <span class="card__tag">Image</span>
+              <span class="card__tag">AI</span>
+            </div>
             <h3>AI Image Generator</h3>
             <p>テキストプロンプトからリアルタイムで画像を生成するウェブアプリ。スタイル転換機能付き。</p>
-            <a class="card__link" href="#" aria-disabled="true">Coming Soon →</a>
+            <div class="card__links">
+              <a class="card__link card__link--disabled" href="#" aria-disabled="true">Coming Soon →</a>
+            </div>
           </div>
         </article>
 
@@ -125,9 +142,8 @@
     </div>
   </section>
 
-  <!-- ── CTA BAND ── -->
+  <!-- ── CTA BAND  (dark: #0D1117) ── -->
   <div class="cta-band">
-    <div class="cta-band__bg"></div>
     <div class="container cta-band__content">
       <h2 class="reveal">Build Something<br><em>Remarkable.</em></h2>
       <p class="reveal reveal-delay-1">AI の力で、アイデアを素早くプロダクトへ。一緒に作りましょう。</p>
@@ -135,10 +151,10 @@
     </div>
   </div>
 
-  <!-- ── TECH STACK ── -->
+  <!-- ── TECH STACK  (blue: #1A3A6B) ── -->
   <section class="stack" id="stack">
     <div class="container">
-      <span class="section-label">// Stack</span>
+      <span class="section-label section-label--light">// Stack</span>
       <h2 class="reveal">Technologies</h2>
       <div class="stack-grid">
         <div class="stack-item reveal">Claude API</div>
@@ -157,7 +173,7 @@
     </div>
   </section>
 
-  <!-- ── CONTACT ── -->
+  <!-- ── CONTACT  (light: #F4F4F5) ── -->
   <section class="contact" id="contact">
     <div class="container">
       <span class="section-label">// Contact</span>
